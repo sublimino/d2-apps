@@ -3,6 +3,9 @@ name: image-updates
 on:
   create:
     branches: [image-updates]
+  push:
+    branches-ignore: [main]
+    tags-ignore: ['*', '**']
 
 jobs:
   pull-request:

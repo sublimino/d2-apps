@@ -3,7 +3,7 @@ name: release-artifact
 on:
   push:
     tags:
-      - '*'
+      - '**'
 
 jobs:
   flux-push-component:

@@ -44,7 +44,7 @@ jobs:
         uses: controlplaneio-fluxcd/distribution/actions/push@main
         id: push
         with:
-          repository: ghcr.io/${{ github.repository }}/${{ matrix.component }}
+          repository: ghcr.io/${{ github.repository }}/${{ steps.prep.outputs.component }}
           path: "./components/${{ steps.prep.outputs.component }}"
           diff-tag: ${{ steps.prep.outputs.version }}
           tags: production

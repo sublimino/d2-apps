@@ -29,6 +29,11 @@ spec:
   # Default values
   # https://github.com/stefanprodan/podinfo/blob/master/charts/podinfo/values.yaml
   values:
+    serviceMonitor:
+      enabled: true
+      interval: 60s
+      additionalLabels:
+        app.kubernetes.io/component: monitoring
     ingress:
       enabled: true
       className: nginx

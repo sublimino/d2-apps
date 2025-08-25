@@ -4,4 +4,4 @@ metadata:
   name: podinfo
 spec:
   values:
-    replicaCount: 1
+    replicaCount: 2

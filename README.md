@@ -1,4 +1,4 @@
-# d2-apps
+# d2-apps supply chain
 
 > [!NOTE]
 > This repository is part of the reference architecture for the
